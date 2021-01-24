@@ -1,0 +1,82 @@
+<div class="container">
+    <form [formGroup]="bookingForm" (ngSubmit)="sendBookingData(bookingForm)">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h3>Room Booking Request</h3>
+            <div>
+                <p class="booking_info">Booking Contact Information</p>
+            </div>
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="">Enter Name</label>
+                            <input type="text" class="form-control" formControlName="name" placeholder="Enter your name" />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="">Enter Email</label>
+                            <input type="text" class="form-control" formControlName="email" placeholder="Enter your email Id" />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="">Enter Mobile</label>
+                            <input type="text" class="form-control" formControlName="mobile" placeholder="Enter your mobile no." />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="">Enter Address</label>
+                            <input type="text" class="form-control" formControlName="address" placeholder="Enter your Address" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="booking_detail">Booking Details</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="">From-Date</label>
+                        <input type="date" class="form-control" formControlName="from_date"/>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="">Date-To</label>
+                        <input type="date" class="form-control" formControlName="to_date" >
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="">No. of rooms</label>
+                        <input type="text" class="form-control" formControlName="no_of_room" />
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="">No. of Members</label>
+                        <input type="text" class="form-control" formControlName="no_of_member" />
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="">Room Type</label>
+                        <select class="form-control" formControlName="room_type">
+                            <option value="">Select</option>
+                            <option value="Delux">Delux</option>
+                            <option value="Non AC">Non AC</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-info">Send Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>

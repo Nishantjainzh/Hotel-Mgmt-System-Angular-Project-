@@ -1,0 +1,7 @@
+.service_block {
+    width: 100%;
+    text-align: center;
+}
+.service_image >img{
+    border-radius:15px
+}

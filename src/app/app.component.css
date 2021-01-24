@@ -1,0 +1,14 @@
+.page_container{
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+.footer {
+    background-color: blanchedalmond;
+    height: 200px;
+    margin-top: 50px;
+}
+.contact_tab {
+    width: 50%;
+    height: 35px;
+    padding-left: 30px;
+}

@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="login_container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3 class="text-center" style="color: mediumslateblue;">Login Form</h3>
+                <form [formGroup]="loginForm" (ngSubmit)="getLoginData(loginForm)">
+                    <div class="col-sm-12">
+                        <div style="margin-top: 50px;">
+                            <div class="form-group">
+                                <label for=""><h6>Enter Login Mail:</h6></label><br>
+                                <input type="text" formControlName="email" placeholder="Enter your registered email id"  class="form-control"/>
+                            </div>
+                        </div>
+                        <div style="margin-top: 50px;">
+                            <div class="form-group">
+                                <label for=""><h6>Enter Password:</h6></label><br>
+                                <input type="text" formControlName="password" placeholder="Enter your Password" class="form-control"/>
+                            </div>
+                        </div>
+                            <div class="col-sm-12" style="margin-top: 50px;"> 
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-6" style="border-left: 1px solid black; margin-top: 10px;">
+                <h3 class="text-center" style="color: seagreen;">Signup Form</h3>
+                <form [formGroup]="signupForm" (ngSubmit)="getSignupData(signupForm)">
+                    <div class="col-sm-12">
+                        <div style="margin-top: 25px;">
+                            <div class="form-group">
+                                <label for=""><h6>Name:</h6></label><br>
+                                <input type="text" formControlName="name" placeholder="Enter your registered Name"  class="form-control"/>
+                            </div>
+                        </div>
+                        <div style="margin-top: 25px;">
+                            <div class="form-group">
+                                <label for=""><h6>Email:</h6></label><br>
+                                <input type="text" formControlName="email" placeholder="Enter your Email" class="form-control"/>
+                            </div>
+                        </div>
+                        <div style="margin-top: 25px;">
+                            <div class="form-group">
+                                <label for=""><h6>Mobile:</h6></label><br>
+                                <input type="text" formControlName="mobile" placeholder="Enter your mobile no" class="form-control"/>
+                            </div>
+                        </div>
+                        <div style="margin-top: 25px;">
+                            <div class="form-group">
+                                <label for=""><h6>Password:</h6></label><br>
+                                <input type="text" formControlName="password" placeholder="Enter your Password" class="form-control"/>
+                            </div>
+                        </div>
+                            <div class="col-sm-12" style="margin-top: 25px;"> 
+                                <button class="btn btn-success">Sign-up</button>
+                            </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
